@@ -1,0 +1,296 @@
+path	license	note
+themes/apps/cluster_themes/app.json	MIT	作者原碼（bimmer-lab；kit 為 cauliflowermossgrape）
+themes/apps/cluster_themes/center_font_probe.js	MIT + 繁中層（CW）	作者原碼加小幅 zh-TW 補丁
+themes/apps/cluster_themes/hud/fonts/b_gear.json	OFL-1.1	預繪字形，字型來源 Outfit[wght].ttf（NOTICE 第3～4c項）
+themes/apps/cluster_themes/hud/fonts/b_label.json	OFL-1.1	預繪字形，字型來源 Outfit[wght].ttf（NOTICE 第3～4c項）
+themes/apps/cluster_themes/hud/fonts/b_label_zh.json	OFL-1.1	繁中層：Noto Sans SC 烘出的中文字形（CW）
+themes/apps/cluster_themes/hud/fonts/b_scale.json	OFL-1.1	預繪字形，字型來源 Outfit[wght].ttf（NOTICE 第3～4c項）
+themes/apps/cluster_themes/hud/fonts/b_speed.json	OFL-1.1	預繪字形，字型來源 Outfit[wght].ttf（NOTICE 第3～4c項）
+themes/apps/cluster_themes/hud/fonts/b_unit.json	OFL-1.1	預繪字形，字型來源 Outfit[wght].ttf（NOTICE 第3～4c項）
+themes/apps/cluster_themes/hud/fonts/b_val.json	OFL-1.1	預繪字形，字型來源 Outfit[wght].ttf（NOTICE 第3～4c項）
+themes/apps/cluster_themes/hud/fonts/b_val_zh.json	OFL-1.1	繁中層：Noto Sans SC 烘出的中文字形（CW）
+themes/apps/cluster_themes/hud/fonts/badge.json	OFL-1.1	預繪字形，字型來源 BarlowCondensed-SemiBold.ttf（NOTICE 第3～4c項）
+themes/apps/cluster_themes/hud/fonts/big.json	OFL-1.1	預繪字形，字型來源 BarlowCondensed-Bold.ttf（NOTICE 第3～4c項）
+themes/apps/cluster_themes/hud/fonts/c_speed.json	OFL-1.1	預繪字形，字型來源 BarlowSemiCondensed-Medium.ttf（NOTICE 第3～4c項）
+themes/apps/cluster_themes/hud/fonts/c_val.json	OFL-1.1	預繪字形，字型來源 BarlowSemiCondensed-Medium.ttf（NOTICE 第3～4c項）
+themes/apps/cluster_themes/hud/fonts/d7_big.json	OFL-1.1	預繪字形，字型來源 DSEG7Classic-Bold.ttf（NOTICE 第3～4c項）
+themes/apps/cluster_themes/hud/fonts/d7_gear.json	OFL-1.1	預繪字形，字型來源 DSEG7Classic-Bold.ttf（NOTICE 第3～4c項）
+themes/apps/cluster_themes/hud/fonts/d7_sm.json	OFL-1.1	預繪字形，字型來源 DSEG7Classic-Bold.ttf（NOTICE 第3～4c項）
+themes/apps/cluster_themes/hud/fonts/d7_val.json	OFL-1.1	預繪字形，字型來源 DSEG7Classic-Bold.ttf（NOTICE 第3～4c項）
+themes/apps/cluster_themes/hud/fonts/gear.json	OFL-1.1	預繪字形，字型來源 BarlowCondensed-Bold.ttf（NOTICE 第3～4c項）
+themes/apps/cluster_themes/hud/fonts/head.json	OFL-1.1	預繪字形，字型來源 BarlowCondensed-SemiBold.ttf（NOTICE 第3～4c項）
+themes/apps/cluster_themes/hud/fonts/head_zh.json	OFL-1.1	繁中層：Noto Sans SC 烘出的中文字形（CW）
+themes/apps/cluster_themes/hud/fonts/m_badge.json	OFL-1.1	預繪字形，字型來源 Barlow-Medium.ttf（NOTICE 第3～4c項）
+themes/apps/cluster_themes/hud/fonts/m_gear.json	OFL-1.1	預繪字形，字型來源 Orbitron[wght].ttf（NOTICE 第3～4c項）
+themes/apps/cluster_themes/hud/fonts/m_gl.json	OFL-1.1	預繪字形，字型來源 Orbitron[wght].ttf（NOTICE 第3～4c項）
+themes/apps/cluster_themes/hud/fonts/m_label.json	OFL-1.1	預繪字形，字型來源 Orbitron[wght].ttf（NOTICE 第3～4c項）
+themes/apps/cluster_themes/hud/fonts/m_label_zh.json	OFL-1.1	繁中層：Noto Sans SC 烘出的中文字形（CW）
+themes/apps/cluster_themes/hud/fonts/m_mid.json	OFL-1.1	預繪字形，字型來源 Orbitron[wght].ttf（NOTICE 第3～4c項）
+themes/apps/cluster_themes/hud/fonts/m_num.json	OFL-1.1	預繪字形，字型來源 Orbitron[wght].ttf（NOTICE 第3～4c項）
+themes/apps/cluster_themes/hud/fonts/m_speed.json	OFL-1.1	預繪字形，字型來源 Orbitron[wght].ttf（NOTICE 第3～4c項）
+themes/apps/cluster_themes/hud/fonts/m_tiny.json	OFL-1.1	預繪字形，字型來源 Barlow-Medium.ttf（NOTICE 第3～4c項）
+themes/apps/cluster_themes/hud/fonts/m_tyre.json	OFL-1.1	預繪字形，字型來源 Orbitron[wght].ttf（NOTICE 第3～4c項）
+themes/apps/cluster_themes/hud/fonts/m_unit.json	OFL-1.1	預繪字形，字型來源 Barlow-Medium.ttf（NOTICE 第3～4c項）
+themes/apps/cluster_themes/hud/fonts/m_val.json	OFL-1.1	預繪字形，字型來源 Barlow-Medium.ttf（NOTICE 第3～4c項）
+themes/apps/cluster_themes/hud/fonts/n_gear.json	OFL-1.1	預繪字形，字型來源 BarlowSemiCondensed-SemiBold.ttf（NOTICE 第3～4c項）
+themes/apps/cluster_themes/hud/fonts/n_speed.json	OFL-1.1	預繪字形，字型來源 BarlowSemiCondensed-Medium.ttf（NOTICE 第3～4c項）
+themes/apps/cluster_themes/hud/fonts/n_unit.json	OFL-1.1	預繪字形，字型來源 Barlow-Medium.ttf（NOTICE 第3～4c項）
+themes/apps/cluster_themes/hud/fonts/r_label.json	OFL-1.1	預繪字形，字型來源 BarlowSemiCondensed-SemiBold.ttf（NOTICE 第3～4c項）
+themes/apps/cluster_themes/hud/fonts/r_label_zh.json	OFL-1.1	繁中層：Noto Sans SC 烘出的中文字形（CW）
+themes/apps/cluster_themes/hud/fonts/s_gear.json	OFL-1.1	預繪字形，字型來源 Michroma-Regular.ttf（NOTICE 第3～4c項）
+themes/apps/cluster_themes/hud/fonts/s_gl.json	OFL-1.1	預繪字形，字型來源 Michroma-Regular.ttf（NOTICE 第3～4c項）
+themes/apps/cluster_themes/hud/fonts/s_hero.json	OFL-1.1	預繪字形，字型來源 Michroma-Regular.ttf（NOTICE 第3～4c項）
+themes/apps/cluster_themes/hud/fonts/s_label.json	OFL-1.1	預繪字形，字型來源 BarlowSemiCondensed-SemiBold.ttf（NOTICE 第3～4c項）
+themes/apps/cluster_themes/hud/fonts/s_label_zh.json	OFL-1.1	繁中層：Noto Sans SC 烘出的中文字形（CW）
+themes/apps/cluster_themes/hud/fonts/s_scale.json	OFL-1.1	預繪字形，字型來源 Michroma-Regular.ttf（NOTICE 第3～4c項）
+themes/apps/cluster_themes/hud/fonts/s_speed.json	OFL-1.1	預繪字形，字型來源 Michroma-Regular.ttf（NOTICE 第3～4c項）
+themes/apps/cluster_themes/hud/fonts/s_unit.json	OFL-1.1	預繪字形，字型來源 Barlow-Medium.ttf（NOTICE 第3～4c項）
+themes/apps/cluster_themes/hud/fonts/s_val.json	OFL-1.1	預繪字形，字型來源 Michroma-Regular.ttf（NOTICE 第3～4c項）
+themes/apps/cluster_themes/hud/fonts/scale.json	OFL-1.1	預繪字形，字型來源 BarlowCondensed-SemiBold.ttf（NOTICE 第3～4c項）
+themes/apps/cluster_themes/hud/fonts/small.json	OFL-1.1	預繪字形，字型來源 BarlowCondensed-Bold.ttf（NOTICE 第3～4c項）
+themes/apps/cluster_themes/hud/fonts/timer.json	OFL-1.1	預繪字形，字型來源 BarlowCondensed-Bold.ttf（NOTICE 第3～4c項）
+themes/apps/cluster_themes/hud/fonts/unit.json	OFL-1.1	預繪字形，字型來源 BarlowCondensed-SemiBold.ttf（NOTICE 第3～4c項）
+themes/apps/cluster_themes/hud/fonts/unit_zh.json	OFL-1.1	繁中層：Noto Sans SC 烘出的中文字形（CW）
+themes/apps/cluster_themes/hud/fonts/v_artist.json	OFL-1.1	預繪字形，字型來源 Barlow-Medium.ttf（NOTICE 第3～4c項）
+themes/apps/cluster_themes/hud/fonts/v_label.json	OFL-1.1	預繪字形，字型來源 BarlowSemiCondensed-SemiBold.ttf（NOTICE 第3～4c項）
+themes/apps/cluster_themes/hud/fonts/v_label_zh.json	OFL-1.1	繁中層：Noto Sans SC 烘出的中文字形（CW）
+themes/apps/cluster_themes/hud/fonts/v_time.json	OFL-1.1	預繪字形，字型來源 Michroma-Regular.ttf（NOTICE 第3～4c項）
+themes/apps/cluster_themes/hud/fonts/v_title.json	OFL-1.1	預繪字形，字型來源 BarlowSemiCondensed-SemiBold.ttf（NOTICE 第3～4c項）
+themes/apps/cluster_themes/hud/fonts/v_val.json	OFL-1.1	預繪字形，字型來源 Michroma-Regular.ttf（NOTICE 第3～4c項）
+themes/apps/cluster_themes/hud/fonts/value.json	OFL-1.1	預繪字形，字型來源 BarlowCondensed-Bold.ttf（NOTICE 第3～4c項）
+themes/apps/cluster_themes/hud/fonts/y_gear.json	OFL-1.1	預繪字形，字型來源 BarlowCondensed-Bold.ttf（NOTICE 第3～4c項）
+themes/apps/cluster_themes/hud/fonts/y_val.json	OFL-1.1	預繪字形，字型來源 BarlowCondensed-Bold.ttf（NOTICE 第3～4c項）
+themes/apps/cluster_themes/hud/layouts/cruise.json	MIT	作者原碼（bimmer-lab；kit 為 cauliflowermossgrape）
+themes/apps/cluster_themes/hud/layouts/drag.json	MIT	作者原碼（bimmer-lab；kit 為 cauliflowermossgrape）
+themes/apps/cluster_themes/hud/layouts/dyno.json	MIT	作者原碼（bimmer-lab；kit 為 cauliflowermossgrape）
+themes/apps/cluster_themes/hud/layouts/grid.json	MIT	作者原碼（bimmer-lab；kit 為 cauliflowermossgrape）
+themes/apps/cluster_themes/hud/layouts/gt3.json	MIT	作者原碼（bimmer-lab；kit 為 cauliflowermossgrape）
+themes/apps/cluster_themes/hud/layouts/m.json	MIT	作者原碼（bimmer-lab；kit 為 cauliflowermossgrape）
+themes/apps/cluster_themes/hud/layouts/mapcal.json	MIT	作者原碼（bimmer-lab；kit 為 cauliflowermossgrape）
+themes/apps/cluster_themes/hud/layouts/minimal.json	MIT	作者原碼（bimmer-lab；kit 為 cauliflowermossgrape）
+themes/apps/cluster_themes/hud/layouts/mview.json	MIT	作者原碼（bimmer-lab；kit 為 cauliflowermossgrape）
+themes/apps/cluster_themes/hud/layouts/rally.json	MIT	作者原碼（bimmer-lab；kit 為 cauliflowermossgrape）
+themes/apps/cluster_themes/hud/layouts/retro80s.json	MIT	作者原碼（bimmer-lab；kit 為 cauliflowermossgrape）
+themes/apps/cluster_themes/hud/layouts/ribbon.json	MIT	作者原碼（bimmer-lab；kit 為 cauliflowermossgrape）
+themes/apps/cluster_themes/hud/layouts/sport.json	MIT	作者原碼（bimmer-lab；kit 為 cauliflowermossgrape）
+themes/apps/cluster_themes/hud/layouts/track.json	MIT	作者原碼（bimmer-lab；kit 為 cauliflowermossgrape）
+themes/apps/cluster_themes/hud/layouts/vector.json	MIT	作者原碼（bimmer-lab；kit 為 cauliflowermossgrape）
+themes/apps/cluster_themes/hud/previews/cruise.json	MIT	作者原碼（bimmer-lab；kit 為 cauliflowermossgrape）
+themes/apps/cluster_themes/hud/previews/drag.json	MIT	作者原碼（bimmer-lab；kit 為 cauliflowermossgrape）
+themes/apps/cluster_themes/hud/previews/dyno.json	MIT	作者原碼（bimmer-lab；kit 為 cauliflowermossgrape）
+themes/apps/cluster_themes/hud/previews/gt3.json	MIT	作者原碼（bimmer-lab；kit 為 cauliflowermossgrape）
+themes/apps/cluster_themes/hud/previews/m.json	MIT	作者原碼（bimmer-lab；kit 為 cauliflowermossgrape）
+themes/apps/cluster_themes/hud/previews/minimal.json	MIT	作者原碼（bimmer-lab；kit 為 cauliflowermossgrape）
+themes/apps/cluster_themes/hud/previews/mview.json	MIT	作者原碼（bimmer-lab；kit 為 cauliflowermossgrape）
+themes/apps/cluster_themes/hud/previews/rally.json	MIT	作者原碼（bimmer-lab；kit 為 cauliflowermossgrape）
+themes/apps/cluster_themes/hud/previews/retro80s.json	MIT	作者原碼（bimmer-lab；kit 為 cauliflowermossgrape）
+themes/apps/cluster_themes/hud/previews/ribbon.json	MIT	作者原碼（bimmer-lab；kit 為 cauliflowermossgrape）
+themes/apps/cluster_themes/hud/previews/sport.json	MIT	作者原碼（bimmer-lab；kit 為 cauliflowermossgrape）
+themes/apps/cluster_themes/hud/previews/track.json	MIT	作者原碼（bimmer-lab；kit 為 cauliflowermossgrape）
+themes/apps/cluster_themes/hud/previews/vector.json	MIT	作者原碼（bimmer-lab；kit 為 cauliflowermossgrape）
+themes/apps/cluster_themes/icon.png	MIT	作者原碼（bimmer-lab；kit 為 cauliflowermossgrape）
+themes/apps/cluster_themes/main.js	MIT + 繁中層（CW）	作者原碼加小幅 zh-TW 補丁
+themes/apps/cluster_themes/NOTICE	MIT + 繁中層（CW）	作者原碼加小幅 zh-TW 補丁
+themes/apps/cluster_themes/README.md	MIT	作者原碼（bimmer-lab；kit 為 cauliflowermossgrape）
+themes/kit/LICENSE	授權文字	MGU App Kit 的 MIT 全文
+themes/kit/platform/permissions.json	MIT	作者原碼（bimmer-lab；kit 為 cauliflowermossgrape）
+themes/kit/runtime/canvas.js	MIT	作者原碼（bimmer-lab；kit 為 cauliflowermossgrape）
+themes/kit/runtime/car.js	MIT	作者原碼（bimmer-lab；kit 為 cauliflowermossgrape）
+themes/kit/runtime/credits.js	MIT	作者原碼（bimmer-lab；kit 為 cauliflowermossgrape）
+themes/kit/runtime/diag.js	MIT	作者原碼（bimmer-lab；kit 為 cauliflowermossgrape）
+themes/kit/runtime/dids.js	MIT	作者原碼（bimmer-lab；kit 為 cauliflowermossgrape）
+themes/kit/runtime/display.js	MIT	作者原碼（bimmer-lab；kit 為 cauliflowermossgrape）
+themes/kit/runtime/ecus.js	MIT	作者原碼（bimmer-lab；kit 為 cauliflowermossgrape）
+themes/kit/runtime/engine.js	MIT	作者原碼（bimmer-lab；kit 為 cauliflowermossgrape）
+themes/kit/runtime/fonts/bold.json	待確認	預繪字形，字型來源 Ubuntu[wdth,wght].ttf；作者 NOTICE 未列此字型，授權待核對
+themes/kit/runtime/fonts/cjk-ct21-extra.json	OFL-1.1	繁中層：中文字圖（Noto Sans SC 烘出；含作者既有字形）
+themes/kit/runtime/fonts/cjk-hud20-base.json	OFL-1.1	繁中層：中文字圖（Noto Sans SC 烘出；含作者既有字形）
+themes/kit/runtime/fonts/cjk.json	OFL-1.1	繁中層：中文字圖（Noto Sans SC 烘出；含作者既有字形）
+themes/kit/runtime/fonts/gear.json	待確認	預繪字形，字型來源 Ubuntu[wdth,wght].ttf；作者 NOTICE 未列此字型，授權待核對
+themes/kit/runtime/fonts/label.json	待確認	預繪字形，字型來源 Ubuntu[wdth,wght].ttf；作者 NOTICE 未列此字型，授權待核對
+themes/kit/runtime/fonts/light.json	待確認	預繪字形，字型來源 Ubuntu[wdth,wght].ttf；作者 NOTICE 未列此字型，授權待核對
+themes/kit/runtime/fonts/num.json	待確認	預繪字形，字型來源 Ubuntu[wdth,wght].ttf；作者 NOTICE 未列此字型，授權待核對
+themes/kit/runtime/fonts/OFL-NotoSansSC.txt	授權文字	SIL OFL 1.1 全文（Noto Sans SC）
+themes/kit/runtime/fonts.js	MIT + 繁中層（CW）	作者原碼加小幅 zh-TW 補丁
+themes/kit/runtime/gauges.js	MIT	作者原碼（bimmer-lab；kit 為 cauliflowermossgrape）
+themes/kit/runtime/hmi-text.js	MIT	作者原碼（bimmer-lab；kit 為 cauliflowermossgrape）
+themes/kit/runtime/hud_claim.js	MIT	作者原碼（bimmer-lab；kit 為 cauliflowermossgrape）
+themes/kit/runtime/i18n.js	MIT + 繁中層（CW）	作者原碼加小幅 zh-TW 補丁
+themes/kit/runtime/locale.json	MIT	作者原碼（bimmer-lab；kit 為 cauliflowermossgrape）
+themes/kit/runtime/locales/ru.json	MIT	作者原碼（bimmer-lab；kit 為 cauliflowermossgrape）
+themes/kit/runtime/locales/ru.tsv	MIT	作者原碼（bimmer-lab；kit 為 cauliflowermossgrape）
+themes/kit/runtime/locales/zh-CN.json	MIT	作者原碼（bimmer-lab；kit 為 cauliflowermossgrape）
+themes/kit/runtime/locales/zh-CN.tsv	MIT	作者原碼（bimmer-lab；kit 為 cauliflowermossgrape）
+themes/kit/runtime/locales/zh-TW.json	繁中層（CW）	繁中詞條／建置入口（無另附授權限制）
+themes/kit/runtime/mgu.js	MIT	作者原碼（bimmer-lab；kit 為 cauliflowermossgrape）
+themes/kit/runtime/pack.js	MIT	作者原碼（bimmer-lab；kit 為 cauliflowermossgrape）
+themes/kit/runtime/parked.js	MIT	作者原碼（bimmer-lab；kit 為 cauliflowermossgrape）
+themes/kit/runtime/readonly-diag.js	MIT	作者原碼（bimmer-lab；kit 為 cauliflowermossgrape）
+themes/kit/runtime/record.js	MIT + 繁中層（CW）	作者原碼加小幅 zh-TW 補丁
+themes/kit/runtime/renderd.js	MIT	作者原碼（bimmer-lab；kit 為 cauliflowermossgrape）
+themes/kit/runtime/sgbd.js	MIT	作者原碼（bimmer-lab；kit 為 cauliflowermossgrape）
+themes/kit/runtime/sheet.js	MIT	作者原碼（bimmer-lab；kit 為 cauliflowermossgrape）
+themes/kit/runtime/signals.js	MIT	作者原碼（bimmer-lab；kit 為 cauliflowermossgrape）
+themes/kit/runtime/sim.js	MIT	作者原碼（bimmer-lab；kit 為 cauliflowermossgrape）
+themes/kit/runtime/text-layout.js	MIT	作者原碼（bimmer-lab；kit 為 cauliflowermossgrape）
+themes/kit/runtime/themes.js	MIT	作者原碼（bimmer-lab；kit 為 cauliflowermossgrape）
+themes/kit/tools/build.py	MIT	作者原碼（bimmer-lab；kit 為 cauliflowermossgrape）
+themes/kit/tools/emu.js	MIT	作者原碼（bimmer-lab；kit 為 cauliflowermossgrape）
+themes/kit/tools/extract_sdk.js	MIT	作者原碼（bimmer-lab；kit 為 cauliflowermossgrape）
+themes/kit/tools/hu-stub.js	MIT	作者原碼（bimmer-lab；kit 為 cauliflowermossgrape）
+themes/kit/tools/locale-revisions.json	MIT	作者原碼（bimmer-lab；kit 為 cauliflowermossgrape）
+themes/kit/tools/localize.py	MIT + 繁中層（CW）	作者原碼加小幅 zh-TW 補丁
+themes/kit/tools/make_icon.js	MIT	作者原碼（bimmer-lab；kit 為 cauliflowermossgrape）
+themes/kit/tools/oapgen/gen.js	MIT	作者原碼（bimmer-lab；kit 為 cauliflowermossgrape）
+themes/kit/tools/pack_data.py	MIT	作者原碼（bimmer-lab；kit 為 cauliflowermossgrape）
+themes/kit/tools/store_zh_tw.py	繁中層（CW）	繁中詞條／建置入口（無另附授權限制）
+themes/shared/badges.js	MIT	作者原碼（bimmer-lab；kit 為 cauliflowermossgrape）
+themes/shared/calibration.js	MIT	作者原碼（bimmer-lab；kit 為 cauliflowermossgrape）
+themes/shared/cluster_render_client.js	MPL-2.0	Robert Nisipeanu；未修改（NOTICE 第2項）
+themes/shared/demo_script.js	MIT	作者原碼（bimmer-lab；kit 為 cauliflowermossgrape）
+themes/shared/garland.js	MIT	作者原碼（bimmer-lab；kit 為 cauliflowermossgrape）
+themes/shared/holidays.js	MIT	作者原碼（bimmer-lab；kit 為 cauliflowermossgrape）
+themes/shared/hud.js	MIT + 繁中層（CW）	作者原碼加小幅 zh-TW 補丁
+themes/shared/hud_data.js	MIT	作者原碼（bimmer-lab；kit 為 cauliflowermossgrape）
+themes/shared/hud_holiday.js	MIT	作者原碼（bimmer-lab；kit 為 cauliflowermossgrape）
+themes/shared/hud_nav.js	MIT	作者原碼（bimmer-lab；kit 為 cauliflowermossgrape）
+themes/shared/hud_text.js	MIT + 繁中層（CW）	作者原碼加小幅 zh-TW 補丁
+themes/shared/hud_themes.js	MIT	作者原碼（bimmer-lab；kit 為 cauliflowermossgrape）
+themes/shared/icons.js	MIT	作者原碼（bimmer-lab；kit 為 cauliflowermossgrape）
+themes/shared/layouts.js	MIT	作者原碼（bimmer-lab；kit 為 cauliflowermossgrape）
+themes/shared/nav.js	MIT	作者原碼（bimmer-lab；kit 為 cauliflowermossgrape）
+themes/shared/page.js	MIT + 繁中層（CW）	作者原碼加小幅 zh-TW 補丁
+themes/shared/previews.js	MIT	作者原碼（bimmer-lab；kit 為 cauliflowermossgrape）
+themes/shared/runs.js	MIT	作者原碼（bimmer-lab；kit 為 cauliflowermossgrape）
+themes/shared/screen.js	MIT	作者原碼（bimmer-lab；kit 為 cauliflowermossgrape）
+themes/shared/sensors.js	MIT	作者原碼（bimmer-lab；kit 為 cauliflowermossgrape）
+themes/shared/shaders.js	MIT + MPL-2.0	檔內 atlas-text shader 為 MPL-2.0（NOTICE 第6項），其餘 MIT
+themes/shared/shift_cue.js	MIT	作者原碼（bimmer-lab；kit 為 cauliflowermossgrape）
+themes/shared/shift_score.js	MIT	作者原碼（bimmer-lab；kit 為 cauliflowermossgrape）
+themes/shared/smart_temps.js	MIT	作者原碼（bimmer-lab；kit 為 cauliflowermossgrape）
+themes/shared/sun.js	MIT	作者原碼（bimmer-lab；kit 為 cauliflowermossgrape）
+themes/shared/tz.js	MIT	作者原碼（bimmer-lab；kit 為 cauliflowermossgrape）
+themes/shared/vehicle_state.js	MIT	作者原碼（bimmer-lab；kit 為 cauliflowermossgrape）
+themes/shared/visible.js	MIT	作者原碼（bimmer-lab；kit 為 cauliflowermossgrape）
+themes/shared/waze.js	MIT	作者原碼（bimmer-lab；kit 為 cauliflowermossgrape）
+hud/apps/idrive_hud_widgets/app.json	MIT	作者原碼（bimmer-lab；kit 為 cauliflowermossgrape）
+hud/apps/idrive_hud_widgets/hud/fonts/big.json	OFL-1.1	預繪字形，字型來源 BarlowSemiCondensed-Medium.ttf（NOTICE 第3～4c項）
+hud/apps/idrive_hud_widgets/hud/fonts/big_zh.json	OFL-1.1	繁中層：Noto Sans SC 烘出的中文字形（CW）
+hud/apps/idrive_hud_widgets/hud/fonts/d7_hero.json	OFL-1.1	預繪字形，字型來源 DSEG7Classic-Bold.ttf（NOTICE 第3～4c項）
+hud/apps/idrive_hud_widgets/hud/fonts/d7_mid.json	OFL-1.1	預繪字形，字型來源 DSEG7Classic-Bold.ttf（NOTICE 第3～4c項）
+hud/apps/idrive_hud_widgets/hud/fonts/hero.json	OFL-1.1	預繪字形，字型來源 BarlowSemiCondensed-SemiBold.ttf（NOTICE 第3～4c項）
+hud/apps/idrive_hud_widgets/hud/fonts/label.json	OFL-1.1	預繪字形，字型來源 Barlow-Medium.ttf（NOTICE 第3～4c項）
+hud/apps/idrive_hud_widgets/hud/fonts/label_zh.json	OFL-1.1	繁中層：Noto Sans SC 烘出的中文字形（CW）
+hud/apps/idrive_hud_widgets/hud/fonts/mid.json	OFL-1.1	預繪字形，字型來源 BarlowSemiCondensed-Medium.ttf（NOTICE 第3～4c項）
+hud/apps/idrive_hud_widgets/hud/fonts/mid_zh.json	OFL-1.1	繁中層：Noto Sans SC 烘出的中文字形（CW）
+hud/apps/idrive_hud_widgets/hud/fonts/np_small.json	OFL-1.1	預繪字形，字型來源 Barlow-Medium.ttf（NOTICE 第3～4c項）
+hud/apps/idrive_hud_widgets/hud/fonts/np_title.json	OFL-1.1	預繪字形，字型來源 BarlowSemiCondensed-SemiBold.ttf（NOTICE 第3～4c項）
+hud/apps/idrive_hud_widgets/hud/fonts/small.json	OFL-1.1	預繪字形，字型來源 Barlow-Medium.ttf（NOTICE 第3～4c項）
+hud/apps/idrive_hud_widgets/hud/fonts/small_zh.json	OFL-1.1	繁中層：Noto Sans SC 烘出的中文字形（CW）
+hud/apps/idrive_hud_widgets/hud/layouts/boost.json	MIT	作者原碼（bimmer-lab；kit 為 cauliflowermossgrape）
+hud/apps/idrive_hud_widgets/hud/layouts/cruise.json	MIT	作者原碼（bimmer-lab；kit 為 cauliflowermossgrape）
+hud/apps/idrive_hud_widgets/hud/layouts/daily.json	MIT	作者原碼（bimmer-lab；kit 為 cauliflowermossgrape）
+hud/apps/idrive_hud_widgets/hud/layouts/grid.json	MIT	作者原碼（bimmer-lab；kit 為 cauliflowermossgrape）
+hud/apps/idrive_hud_widgets/hud/layouts/minimal.json	MIT	作者原碼（bimmer-lab；kit 為 cauliflowermossgrape）
+hud/apps/idrive_hud_widgets/hud/layouts/mview.json	MIT	作者原碼（bimmer-lab；kit 為 cauliflowermossgrape）
+hud/apps/idrive_hud_widgets/hud/layouts/redline.json	MIT	作者原碼（bimmer-lab；kit 為 cauliflowermossgrape）
+hud/apps/idrive_hud_widgets/hud/layouts/retro.json	MIT	作者原碼（bimmer-lab；kit 為 cauliflowermossgrape）
+hud/apps/idrive_hud_widgets/hud/layouts/shiftonly.json	MIT	作者原碼（bimmer-lab；kit 為 cauliflowermossgrape）
+hud/apps/idrive_hud_widgets/hud/layouts/sport.json	MIT	作者原碼（bimmer-lab；kit 為 cauliflowermossgrape）
+hud/apps/idrive_hud_widgets/hud/layouts/track.json	MIT	作者原碼（bimmer-lab；kit 為 cauliflowermossgrape）
+hud/apps/idrive_hud_widgets/hud/layouts/vector.json	MIT	作者原碼（bimmer-lab；kit 為 cauliflowermossgrape）
+hud/apps/idrive_hud_widgets/hud/layouts/warmup.json	MIT	作者原碼（bimmer-lab；kit 為 cauliflowermossgrape）
+hud/apps/idrive_hud_widgets/hud/layouts/wincal.json	MIT	作者原碼（bimmer-lab；kit 為 cauliflowermossgrape）
+hud/apps/idrive_hud_widgets/hud/previews/boost.json	MIT	作者原碼（bimmer-lab；kit 為 cauliflowermossgrape）
+hud/apps/idrive_hud_widgets/hud/previews/cruise.json	MIT	作者原碼（bimmer-lab；kit 為 cauliflowermossgrape）
+hud/apps/idrive_hud_widgets/hud/previews/daily.json	MIT	作者原碼（bimmer-lab；kit 為 cauliflowermossgrape）
+hud/apps/idrive_hud_widgets/hud/previews/minimal.json	MIT	作者原碼（bimmer-lab；kit 為 cauliflowermossgrape）
+hud/apps/idrive_hud_widgets/hud/previews/mview.json	MIT	作者原碼（bimmer-lab；kit 為 cauliflowermossgrape）
+hud/apps/idrive_hud_widgets/hud/previews/redline.json	MIT	作者原碼（bimmer-lab；kit 為 cauliflowermossgrape）
+hud/apps/idrive_hud_widgets/hud/previews/retro.json	MIT	作者原碼（bimmer-lab；kit 為 cauliflowermossgrape）
+hud/apps/idrive_hud_widgets/hud/previews/shiftonly.json	MIT	作者原碼（bimmer-lab；kit 為 cauliflowermossgrape）
+hud/apps/idrive_hud_widgets/hud/previews/sport.json	MIT	作者原碼（bimmer-lab；kit 為 cauliflowermossgrape）
+hud/apps/idrive_hud_widgets/hud/previews/track.json	MIT	作者原碼（bimmer-lab；kit 為 cauliflowermossgrape）
+hud/apps/idrive_hud_widgets/hud/previews/vector.json	MIT	作者原碼（bimmer-lab；kit 為 cauliflowermossgrape）
+hud/apps/idrive_hud_widgets/hud/previews/warmup.json	MIT	作者原碼（bimmer-lab；kit 為 cauliflowermossgrape）
+hud/apps/idrive_hud_widgets/icon.png	MIT	作者原碼（bimmer-lab；kit 為 cauliflowermossgrape）
+hud/apps/idrive_hud_widgets/main.js	MIT	作者原碼（bimmer-lab；kit 為 cauliflowermossgrape）
+hud/apps/idrive_hud_widgets/NOTICE	MIT + 繁中層（CW）	作者原碼加小幅 zh-TW 補丁
+hud/apps/idrive_hud_widgets/README.md	MIT	作者原碼（bimmer-lab；kit 為 cauliflowermossgrape）
+hud/kit/LICENSE	授權文字	MGU App Kit 的 MIT 全文
+hud/kit/platform/permissions.json	MIT	作者原碼（bimmer-lab；kit 為 cauliflowermossgrape）
+hud/kit/runtime/canvas.js	MIT	作者原碼（bimmer-lab；kit 為 cauliflowermossgrape）
+hud/kit/runtime/car.js	MIT	作者原碼（bimmer-lab；kit 為 cauliflowermossgrape）
+hud/kit/runtime/credits.js	MIT	作者原碼（bimmer-lab；kit 為 cauliflowermossgrape）
+hud/kit/runtime/diag.js	MIT	作者原碼（bimmer-lab；kit 為 cauliflowermossgrape）
+hud/kit/runtime/dids.js	MIT	作者原碼（bimmer-lab；kit 為 cauliflowermossgrape）
+hud/kit/runtime/display.js	MIT	作者原碼（bimmer-lab；kit 為 cauliflowermossgrape）
+hud/kit/runtime/ecus.js	MIT	作者原碼（bimmer-lab；kit 為 cauliflowermossgrape）
+hud/kit/runtime/engine.js	MIT	作者原碼（bimmer-lab；kit 為 cauliflowermossgrape）
+hud/kit/runtime/fonts/bold.json	待確認	預繪字形，字型來源 Ubuntu[wdth,wght].ttf；作者 NOTICE 未列此字型，授權待核對
+hud/kit/runtime/fonts/cjk.json	OFL-1.1	繁中層：中文字圖（Noto Sans SC 烘出；含作者既有字形）
+hud/kit/runtime/fonts/gear.json	待確認	預繪字形，字型來源 Ubuntu[wdth,wght].ttf；作者 NOTICE 未列此字型，授權待核對
+hud/kit/runtime/fonts/label.json	待確認	預繪字形，字型來源 Ubuntu[wdth,wght].ttf；作者 NOTICE 未列此字型，授權待核對
+hud/kit/runtime/fonts/light.json	待確認	預繪字形，字型來源 Ubuntu[wdth,wght].ttf；作者 NOTICE 未列此字型，授權待核對
+hud/kit/runtime/fonts/num.json	待確認	預繪字形，字型來源 Ubuntu[wdth,wght].ttf；作者 NOTICE 未列此字型，授權待核對
+hud/kit/runtime/fonts/OFL-NotoSansSC.txt	授權文字	SIL OFL 1.1 全文（Noto Sans SC）
+hud/kit/runtime/fonts.js	MIT + 繁中層（CW）	作者原碼加小幅 zh-TW 補丁
+hud/kit/runtime/gauges.js	MIT	作者原碼（bimmer-lab；kit 為 cauliflowermossgrape）
+hud/kit/runtime/hmi-text.js	MIT	作者原碼（bimmer-lab；kit 為 cauliflowermossgrape）
+hud/kit/runtime/hud_claim.js	MIT	作者原碼（bimmer-lab；kit 為 cauliflowermossgrape）
+hud/kit/runtime/i18n.js	MIT + 繁中層（CW）	作者原碼加小幅 zh-TW 補丁
+hud/kit/runtime/locale.json	MIT	作者原碼（bimmer-lab；kit 為 cauliflowermossgrape）
+hud/kit/runtime/locales/zh-CN.json	MIT	作者原碼（bimmer-lab；kit 為 cauliflowermossgrape）
+hud/kit/runtime/locales/zh-CN.tsv	MIT	作者原碼（bimmer-lab；kit 為 cauliflowermossgrape）
+hud/kit/runtime/locales/zh-TW.json	繁中層（CW）	繁中詞條／建置入口（無另附授權限制）
+hud/kit/runtime/mgu.js	MIT	作者原碼（bimmer-lab；kit 為 cauliflowermossgrape）
+hud/kit/runtime/pack.js	MIT	作者原碼（bimmer-lab；kit 為 cauliflowermossgrape）
+hud/kit/runtime/parked.js	MIT	作者原碼（bimmer-lab；kit 為 cauliflowermossgrape）
+hud/kit/runtime/readonly-diag.js	MIT	作者原碼（bimmer-lab；kit 為 cauliflowermossgrape）
+hud/kit/runtime/record.js	MIT + 繁中層（CW）	作者原碼加小幅 zh-TW 補丁
+hud/kit/runtime/renderd.js	MIT	作者原碼（bimmer-lab；kit 為 cauliflowermossgrape）
+hud/kit/runtime/sgbd.js	MIT	作者原碼（bimmer-lab；kit 為 cauliflowermossgrape）
+hud/kit/runtime/sheet.js	MIT	作者原碼（bimmer-lab；kit 為 cauliflowermossgrape）
+hud/kit/runtime/signals.js	MIT	作者原碼（bimmer-lab；kit 為 cauliflowermossgrape）
+hud/kit/runtime/sim.js	MIT	作者原碼（bimmer-lab；kit 為 cauliflowermossgrape）
+hud/kit/runtime/text-layout.js	MIT	作者原碼（bimmer-lab；kit 為 cauliflowermossgrape）
+hud/kit/runtime/themes.js	MIT	作者原碼（bimmer-lab；kit 為 cauliflowermossgrape）
+hud/kit/tools/build.py	MIT	作者原碼（bimmer-lab；kit 為 cauliflowermossgrape）
+hud/kit/tools/emu.js	MIT	作者原碼（bimmer-lab；kit 為 cauliflowermossgrape）
+hud/kit/tools/extract_sdk.js	MIT	作者原碼（bimmer-lab；kit 為 cauliflowermossgrape）
+hud/kit/tools/hu-stub.js	MIT	作者原碼（bimmer-lab；kit 為 cauliflowermossgrape）
+hud/kit/tools/locale-revisions.json	MIT	作者原碼（bimmer-lab；kit 為 cauliflowermossgrape）
+hud/kit/tools/localize.py	MIT + 繁中層（CW）	作者原碼加小幅 zh-TW 補丁
+hud/kit/tools/make_icon.js	MIT	作者原碼（bimmer-lab；kit 為 cauliflowermossgrape）
+hud/kit/tools/oapgen/gen.js	MIT	作者原碼（bimmer-lab；kit 為 cauliflowermossgrape）
+hud/kit/tools/pack_data.py	MIT	作者原碼（bimmer-lab；kit 為 cauliflowermossgrape）
+hud/kit/tools/store_zh_tw.py	繁中層（CW）	繁中詞條／建置入口（無另附授權限制）
+hud/shared/badges.js	MIT	作者原碼（bimmer-lab；kit 為 cauliflowermossgrape）
+hud/shared/calibration.js	MIT	作者原碼（bimmer-lab；kit 為 cauliflowermossgrape）
+hud/shared/cluster_render_client.js	MPL-2.0	Robert Nisipeanu；未修改（NOTICE 第2項）
+hud/shared/demo_script.js	MIT	作者原碼（bimmer-lab；kit 為 cauliflowermossgrape）
+hud/shared/garland.js	MIT	作者原碼（bimmer-lab；kit 為 cauliflowermossgrape）
+hud/shared/holidays.js	MIT	作者原碼（bimmer-lab；kit 為 cauliflowermossgrape）
+hud/shared/hud.js	MIT + 繁中層（CW）	作者原碼加小幅 zh-TW 補丁
+hud/shared/hud_data.js	MIT	作者原碼（bimmer-lab；kit 為 cauliflowermossgrape）
+hud/shared/hud_holiday.js	MIT	作者原碼（bimmer-lab；kit 為 cauliflowermossgrape）
+hud/shared/hud_nav.js	MIT	作者原碼（bimmer-lab；kit 為 cauliflowermossgrape）
+hud/shared/hud_text.js	MIT + 繁中層（CW）	作者原碼加小幅 zh-TW 補丁
+hud/shared/hud_themes.js	MIT	作者原碼（bimmer-lab；kit 為 cauliflowermossgrape）
+hud/shared/icons.js	MIT	作者原碼（bimmer-lab；kit 為 cauliflowermossgrape）
+hud/shared/layouts.js	MIT	作者原碼（bimmer-lab；kit 為 cauliflowermossgrape）
+hud/shared/nav.js	MIT	作者原碼（bimmer-lab；kit 為 cauliflowermossgrape）
+hud/shared/page.js	MIT + 繁中層（CW）	作者原碼加小幅 zh-TW 補丁
+hud/shared/previews.js	MIT	作者原碼（bimmer-lab；kit 為 cauliflowermossgrape）
+hud/shared/runs.js	MIT	作者原碼（bimmer-lab；kit 為 cauliflowermossgrape）
+hud/shared/screen.js	MIT	作者原碼（bimmer-lab；kit 為 cauliflowermossgrape）
+hud/shared/sensors.js	MIT	作者原碼（bimmer-lab；kit 為 cauliflowermossgrape）
+hud/shared/shaders.js	MIT + MPL-2.0	檔內 atlas-text shader 為 MPL-2.0（NOTICE 第6項），其餘 MIT
+hud/shared/shift_cue.js	MIT	作者原碼（bimmer-lab；kit 為 cauliflowermossgrape）
+hud/shared/shift_score.js	MIT	作者原碼（bimmer-lab；kit 為 cauliflowermossgrape）
+hud/shared/smart_temps.js	MIT	作者原碼（bimmer-lab；kit 為 cauliflowermossgrape）
+hud/shared/sun.js	MIT	作者原碼（bimmer-lab；kit 為 cauliflowermossgrape）
+hud/shared/tz.js	MIT	作者原碼（bimmer-lab；kit 為 cauliflowermossgrape）
+hud/shared/vehicle_state.js	MIT	作者原碼（bimmer-lab；kit 為 cauliflowermossgrape）
+hud/shared/visible.js	MIT	作者原碼（bimmer-lab；kit 為 cauliflowermossgrape）
+hud/shared/waze.js	MIT	作者原碼（bimmer-lab；kit 為 cauliflowermossgrape）

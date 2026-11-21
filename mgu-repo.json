@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "components": [
+    {
+      "id": "cluster_themes",
+      "kind": "app",
+      "path": "bimmer-lab/themes/apps/cluster_themes",
+      "manifest": "app.json",
+      "icon": "icon.png",
+      "build": {
+        "python": "bimmer-lab/themes/kit/tools/store_zh_tw.py",
+        "args": [
+          "{id}",
+          "--language",
+          "zh-TW"
+        ],
+        "sdk": "bimmer-lab/themes/oap-sdk",
+        "output": "bimmer-lab/themes/dist/{id}@{version}.tgz",
+        "network": [],
+        "shared": [
+          "bimmer-lab/themes/kit/runtime",
+          "bimmer-lab/themes/kit/platform",
+          "bimmer-lab/themes/kit/tools",
+          "bimmer-lab/themes/shared",
+          "bimmer-lab/themes/oap-sdk"
+        ]
+      },
+      "title": "數位儀表主題（繁體中文版）",
+      "description": "提供多種數位儀表主題，顯示車速、轉速、檔位、溫度等車輛資訊，並可透過中控畫面調整主題與顯示設定。\n\n繁中製作：CW"
+    },
+    {
+      "id": "idrive_hud_widgets",
+      "kind": "app",
+      "path": "bimmer-lab/hud/apps/idrive_hud_widgets",
+      "manifest": "app.json",
+      "icon": "icon.png",
+      "build": {
+        "python": "bimmer-lab/hud/kit/tools/store_zh_tw.py",
+        "args": [
+          "{id}",
+          "--language",
+          "zh-TW"
+        ],
+        "sdk": "bimmer-lab/hud/oap-sdk",
+        "output": "bimmer-lab/hud/dist/{id}@{version}.tgz",
+        "network": [],
+        "shared": [
+          "bimmer-lab/hud/kit/runtime",
+          "bimmer-lab/hud/kit/platform",
+          "bimmer-lab/hud/kit/tools/build.py",
+          "bimmer-lab/hud/kit/tools/pack_data.py",
+          "bimmer-lab/hud/kit/tools/localize.py",
+          "bimmer-lab/hud/kit/tools/locale-revisions.json",
+          "bimmer-lab/hud/kit/tools/oapgen",
+          "bimmer-lab/hud/shared",
+          "bimmer-lab/hud/kit/tools/store_zh_tw.py",
+          "bimmer-lab/hud/oap-sdk"
+        ]
+      },
+      "title": "HUD 抬頭顯示小工具（繁體中文版）",
+      "description": "在抬頭顯示器呈現檔位、換檔提示、增壓、溫度、G 值與行程資訊，提供多種顯示配置。\n\n繁中製作：CW"
+    }
+  ],
+  "tools": []
+}

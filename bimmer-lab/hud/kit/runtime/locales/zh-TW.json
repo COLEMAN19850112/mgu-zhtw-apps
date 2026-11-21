@@ -297,5 +297,9 @@
   "rev band · km/h": "轉速區間 · km/h",
   "lights · now playing": "燈號 · 播放中",
   "NOW PLAYING": "播放中",
-  "M view": "M 視角"
+  "M view": "M 視角",
+  "Leave BMW's bottom strip clear": "保留 BMW 底部欄",
+  "Temperature": "溫度",
+  "Pressure": "壓力",
+  "Match speed": "依車速單位"
 }

@@ -6,8 +6,8 @@ MGU 車機（iDrive 7）App 的繁體中文（台灣用語）來源倉庫。這�
 
 | App | 版本 | 原作者與授權 | 資料夾 |
 |---|---|---|---|
-| HUD 抬頭顯示小工具（HUD Widgets） | 0.15.1 | bimmer-lab，MIT（[LICENSE](bimmer-lab/LICENSE)） | `bimmer-lab/hud/` |
-| 數位儀表主題（Cluster Themes） | 0.19.1 | bimmer-lab，MIT（[LICENSE](bimmer-lab/LICENSE)） | `bimmer-lab/themes/` |
+| HUD 抬頭顯示小工具（HUD Widgets） | 0.15.2 | bimmer-lab，MIT（[LICENSE](bimmer-lab/LICENSE)） | `bimmer-lab/hud/` |
+| 數位儀表主題（Cluster Themes） | 0.19.2 | bimmer-lab，MIT（[LICENSE](bimmer-lab/LICENSE)） | `bimmer-lab/themes/` |
 
 原作者倉庫：https://github.com/bimmer-lab/apps 。各作者的授權、MPL／OFL 第三方部分與逐檔歸屬見該作者資料夾內的 `LICENSE`、`MPL-2.0.txt`、`NOTICE.md`、`LICENSES.tsv`；繁中層說明見 [NOTICE.zh-TW.md](NOTICE.zh-TW.md)。之後新增的程式會以「作者／系列」開新資料夾，各帶自己的 kit 與授權檔。
 

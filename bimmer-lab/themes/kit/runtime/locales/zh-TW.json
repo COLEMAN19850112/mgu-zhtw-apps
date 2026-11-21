@@ -326,5 +326,9 @@
   "NOTHING PLAYING": "未播放",
   "LATERAL G": "側向 G 值",
   "AVG KM/H": "平均 KM/H",
-  "AVG MPH": "平均 MPH"
+  "AVG MPH": "平均 MPH",
+  "Leave BMW's bottom strip clear": "保留 BMW 底部欄",
+  "Temperature": "溫度",
+  "Pressure": "壓力",
+  "Match speed": "依車速單位"
 }

@@ -10,7 +10,7 @@ import sys
 
 TOOLS = Path(__file__).resolve().parent
 EXPECTED = {
-    'build.py': '93aa41146a68927a1cb526acc186238db4708a7abb0a61762b091d12ca42573a',
+    'build.py': '40f770c63d555faa2f8b8bdc39e3b15f6ec2b322ec1894c02b7ec2c03120fc0d',
     'localize.py': '96bbaf50d8c34448f90f06c9ab9ddf143affed1ad941dbbd83eac4073dcdd2dd',
 }
 

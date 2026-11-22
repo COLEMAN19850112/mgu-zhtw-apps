@@ -304,11 +304,12 @@ const TICK_MS = 50;              // 20 Hz: shift bar and gauges
 const TEXT_MS = 200;             // text re-draws at most 5 times a second (what BMW's own readouts do)
 const TARGET_SIZES = { hud: [800, 480], panel: [1920, 720] };
 const MODE_KEY = { comfort: 'inComfort', sport: 'inSport', eco: 'inEco' };
+// a plug-in hybrid's eDrive mode (issue #31; the idea from FDX100's KurdBimmer Themes): its own theme when the driver
+// picked one ("In Hybrid" / "In Electric", Cluster Themes), else the drive mode's
+const PHEV_KEY = { hybrid: 'inHybrid', electric: 'inElectric' };
 const TYRE_CORNERS = ['FL', 'FR', 'RL', 'RR'];
 // the HUD's place (the page's Position tab): settings that move / scale the layers already there, no rebuild
 const PLACE_KEYS = ['hudX', 'hudY', 'hudScale'];
-// (0.17.4: "Leave BMW's bottom strip clear" is gone. Since 0.17.0 every cluster theme ends above BMW's strip anyway;
-// its squeeze to 662 / 720 only lifted the theme off the bottoms of BMW's own gauges, car photo Nov 14 2026.)
 // settings that only change what a text shows (the next tick paints it), no rebuild
 const LIVE_KEYS = ['warnOil', 'warnCoolant', 'warnBoost', 'badge', 'badgeBMW', 'gFlipLat', 'gFlipLong', 'gRange', 'gTrail'];
 // g (after cauliflowermossgrape's G-Force, MIT, idea only): a sample over G_BAD is a bad reading, not a corner;
@@ -424,9 +425,16 @@ function driveModeName(raw) {
     return name ? name.replace(/^PHEV_/, '') : null;
 }
 
+/** 'hybrid' (Hybrid, Hybrid Eco Pro, Hybrid Comfort, Battery Control: 17..19, 22), 'electric' (20, 21), or null. */
+function phevSlotOf(raw) {
+    const u = driveModeName(raw);
+    return !u ? null : u.indexOf('ELECTRIC') === 0 ? 'electric' : u.indexOf('HYBRID') === 0 || u === 'BATTERYCONTROL' ? 'hybrid' : null;
+}
+
 function driveVariantOf(raw) {
     const u = driveModeName(raw);
-    return !u ? null : /PLUS|EXPERT/.test(u) ? 'plus' : /INDIVID/.test(u) ? 'individual' : null;
+    // 'adaptive': Adaptive (10) uses the Comfort slot but is named as itself next to the gear (issue #29)
+    return !u ? null : /PLUS|EXPERT/.test(u) ? 'plus' : /INDIVID/.test(u) ? 'individual' : u.indexOf('ADAPTIVE') === 0 ? 'adaptive' : null;
 }
 
 /** The M theme's setup rows: what each part is set to in a drive mode (they follow the mode buttons). */
@@ -529,7 +537,9 @@ class HudApp {
         this.tripT = 0;
         this.driveMode = null;           // 'comfort' | 'sport' | 'eco', once the car has said
         this.driveRaw = null;            // a drive mode value the car sent that we don't know (shown in the status)
-        this.driveVariant = null;        // 'plus' (Sport+ / Comfort+ / Eco Pro+), 'individual', or null
+        this.driveVariant = null;        // 'plus' (Sport+ / Comfort+ / Eco Pro+), 'individual', 'adaptive' (Comfort), or null
+        this.drivePhev = null;           // a plug-in hybrid's 'hybrid' / 'electric' (phevSlotOf), else null
+        this.phevSeen = false;           // the car sent a plug-in hybrid mode: the page shows In Hybrid / In Electric
         this.carUnits = { press: null, temp: null, psiSeen: false };   // the car's display units, for the TPMS values
         this.program = null;             // 'S' / 'M' from the MDrive gearbox display, else null (D)
         this.gradeMode = null;           // the same display for the shift grades: D / S / M, null while unknown
@@ -583,9 +593,10 @@ class HudApp {
         this.layouts.onChange(() => this._rebuild());
         ctx.settings.onChange((key) => {
             // a theme or layout picked anywhere (the page asks first, the kit's All settings list doesn't): no longer stepping aside
-            if (['hudLayout', 'inComfort', 'inSport', 'inEco', 'byMode'].indexOf(key) >= 0 && this.screen.yielded) this.screen.release();
+            if (['hudLayout', 'inComfort', 'inSport', 'inEco', 'inHybrid', 'inElectric', 'byMode'].indexOf(key) >= 0 && this.screen.yielded) this.screen.release();
             if (PLACE_KEYS.indexOf(key) >= 0) this._guard('place', () => this._place());
             else if (LIVE_KEYS.indexOf(key) >= 0) this.widgets.forEach((x) => { x.last = null; });
+            else if (key === 'autoStart') { /* read by main.js at the next start only */ }
             else if (key !== 'demo') this._rebuild(); else this._status();
         });
     }
@@ -804,7 +815,8 @@ class HudApp {
                     this.driveRaw = null;
                     if (m !== 'comfort') this.fesWorks = true;      // not an M car whose FES is stuck on Comfort
                     if (this.mDrive && !this.fesWorks) return;     // an M car: M Drive has the mode
-                    this._driveMode(m, variant, raw);
+                    if (/^PHEV_/.test(String(DRIVE_MODE_NAMES[Number(raw)] || raw).trim().toUpperCase())) this.phevSeen = true;
+                    this._driveMode(m, variant, raw, phevSlotOf(raw));
                 },
             },
         };
@@ -1113,6 +1125,10 @@ class HudApp {
     }
     /** The layout the driver picked for now, before anything that makes us step aside. */
     _chosenName() {
+        if (this.setting('byMode') === true && this.drivePhev) {
+            const v = this.setting(PHEV_KEY[this.drivePhev]);
+            if (v && v !== 'same') return v;
+        }
         if (this.setting('byMode') === true && this.driveMode && MODE_KEY[this.driveMode]) {
             const v = this.setting(MODE_KEY[this.driveMode]);
             if (v) return v;
@@ -1252,13 +1268,13 @@ class HudApp {
             + (this.pixelBytes ? '，像素 ' + mib(this.pixelBytes) + ' / 16 MiB' : '');
         if (this.layoutTheme) return this.label + ' 已開啟' + mode + '：' + name + ' 主題' + layers + demo + drawn;
         const theme = THEMES[this.themeName] ? THEMES[this.themeName].name : this.themeName;
-        const auto = this.setting('hudTheme') === 'auto' ? '（自動）' : '';
-        return this.label + ' 已開啟' + mode + '：' + name + ' 版面，' + theme + ' 主題' + auto + layers + demo + drawn;
+        const auto = this.setting('hudTheme') === 'auto' ? ' (Auto)' : '';
+        return this.label + ' on' + mode + ': ' + name + ' layout, ' + theme + ' theme' + auto + layers + demo + drawn;
     }
 
     _status() {
         // the Waze map's state rides along while that setting is on (and redraws the page's Map tab when it changes)
-        const s = this.statusText() + (this.waze && this.setting('mapInTheme') === true ? '；Waze：' + this.waze.info().text : '');
+        const s = this.statusText() + (this.waze && this.setting('mapInTheme') === true ? '; Waze: ' + this.waze.info().text : '');
         const d = this.modeDiagLines().join('\n');
         if (s === this.lastStatus && d === this.lastDiag) return;
         this.lastStatus = s; this.lastDiag = d;
@@ -1272,11 +1288,12 @@ class HudApp {
      * mode. Fields that change all the time while driving (boost, power, torque) are left out. Never throws.
      */
     /** A drive mode from the car (FES, or M Drive on M cars): the layout for it, or the status line. */
-    _driveMode(m, variant, raw) {
-        if (this.demoKeep) { this.demoKeep.mode = m; this.demoKeep.variant = variant; return; }   // the demo show has the mode; kept for after
-        if (m === this.driveMode && variant === this.driveVariant) return;
-        this.log.info('drive mode ' + MODE_NAME[m] + (variant ? ' ' + variant : '') + ' (' + raw + ')');
-        this.driveMode = m; this.driveVariant = variant;
+    _driveMode(m, variant, raw, phev) {
+        phev = phev || null;
+        if (this.demoKeep) { this.demoKeep.mode = m; this.demoKeep.variant = variant; this.demoKeep.phev = phev; return; }   // the demo show has the mode; kept for after
+        if (m === this.driveMode && variant === this.driveVariant && phev === this.drivePhev) return;
+        this.log.info('drive mode ' + MODE_NAME[m] + (variant ? ' ' + variant : '') + (phev ? ' (' + phev + ')' : '') + ' (' + raw + ')');
+        this.driveMode = m; this.driveVariant = variant; this.drivePhev = phev;
         if (this._layoutName() !== this.activeName) this._rebuild(); else this._status();
     }
 
@@ -1307,7 +1324,7 @@ class HudApp {
      */
     modeDiagLines(names) {
         if (this.setting('byMode') !== true) return [];
-        return (names || ['HMI', 'MDrive', 'Engine', 'Sport2']).map((n, i) => (i ? '' : '駕駛模式檢查：') + n + '  ' + (this.modeDiag[n] || '--'));
+        return (names || ['HMI', 'MDrive', 'Engine', 'Sport2']).map((n, i) => (i ? '' : 'Drive mode check: ') + n + '  ' + (this.modeDiag[n] || '--'));
     }
 
 /* ---------------- theme, units, values ---------------- */
@@ -1419,9 +1436,9 @@ class HudApp {
             },
             // the drive mode the show is in (null: the car's own again); redrawn when the layout changes, or always with force
             drive: (m, force) => {
-                if (m && !this.demoKeep) this.demoKeep = { mode: this.driveMode, variant: this.driveVariant };
-                if (m) { this.driveMode = m; this.driveVariant = null; }
-                else if (this.demoKeep) { this.driveMode = this.demoKeep.mode; this.driveVariant = this.demoKeep.variant; this.demoKeep = null; }
+                if (m && !this.demoKeep) this.demoKeep = { mode: this.driveMode, variant: this.driveVariant, phev: this.drivePhev };
+                if (m) { this.driveMode = m; this.driveVariant = null; this.drivePhev = null; }
+                else if (this.demoKeep) { this.driveMode = this.demoKeep.mode; this.driveVariant = this.demoKeep.variant; this.drivePhev = this.demoKeep.phev || null; this.demoKeep = null; }
                 // a calibration layout carries the DEMO tag only while the show plays (CAL_LAYOUTS): Play and Stop rebuild it
                 if (force || this._layoutName() !== this.activeName || CAL_LAYOUTS[this.activeName]) this._rebuild(); else this._status();
             },
@@ -1785,6 +1802,7 @@ class HudApp {
             }
             case 'mode': {
                 if (!this.driveMode) return '';
+                if (this.driveVariant === 'adaptive') return 'ADAPTIVE';
                 const base = this.driveMode === 'sport' ? 'SPORT' : this.driveMode === 'eco' ? 'ECO PRO' : 'COMFORT';
                 return base + (this.driveVariant === 'plus' ? ' PLUS' : this.driveVariant === 'individual' ? ' INDIVIDUAL' : '');
             }

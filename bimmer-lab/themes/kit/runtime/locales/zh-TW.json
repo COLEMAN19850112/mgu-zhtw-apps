@@ -330,5 +330,12 @@
   "Leave BMW's bottom strip clear": "保留 BMW 底部欄",
   "Temperature": "溫度",
   "Pressure": "壓力",
-  "Match speed": "依車速單位"
+  "Match speed": "依車速單位",
+  "Start with the car": "隨車啟動",
+  "In Hybrid": "油電模式下",
+  "In Electric": "電動模式下",
+  "Same as the drive mode": "同駕駛模式",
+  "Same": "同模式",
+  "Hybrid": "油電",
+  "Electric": "電動"
 }
